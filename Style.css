@@ -1,0 +1,135 @@
+/* Seletores Universais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do Corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Seletores de ID */
+#header {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#main-content {
+    padding: 20px;
+}
+
+#footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para Logotipo */
+.logo {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* Estilo para os Links de Redes Sociais */
+.social-links {
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #dfe3ee;
+}
+
+/* Seletores de Classe */
+.post {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Seletores de Descendentes */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #dfe3ee;
+}
+
+/* Seletores de Atributo */
+img[alt] {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Pseudo-elementos */
+h2::before {
+    content: '📄 ';
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Pseudo-classe */
+a.follow-btn {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+a.follow-btn:hover {
+    background-color: #2d4373;
+}
+
+/* Agrupamento de Seletores */
+h2, p {
+    margin-bottom: 15px;
+}
+
+/* Transições Suaves */
+.post {
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.post:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
